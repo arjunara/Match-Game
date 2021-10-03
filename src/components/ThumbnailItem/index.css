@@ -1,0 +1,15 @@
+.thumbnail-list-item {
+  list-style-type: none;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.thumbnail-img {
+  height: 120px;
+  width: 120px;
+}
+.thumbnail-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}

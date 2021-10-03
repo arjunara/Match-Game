@@ -1,0 +1,19 @@
+.tab-list-item {
+  list-style-type: none;
+}
+.tab-button {
+  background-color: transparent;
+  height: 40px;
+  width: 120px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.active-tab {
+  border-bottom: 3px solid #fec653;
+  color: #fec653;
+}

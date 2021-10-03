@@ -1,0 +1,129 @@
+.app-bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  min-height: 100vh;
+}
+.navbar {
+  height: 15vh;
+  background-color: #2c0e3a;
+  display: flex;
+  justify-content: center;
+}
+.header-section {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.website-logo {
+  height: 45px;
+  padding-left: 10px;
+}
+.score-container {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.score {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.score-count {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 500;
+  color: #fec653;
+  margin-right: 25px;
+}
+.timer-img {
+  height: 40px;
+  width: 40px;
+}
+.timer-count {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 500;
+  color: #fec653;
+  margin-left: 10px;
+}
+.app-container {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-container {
+  width: 65%;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.home-page-image {
+  height: 500px;
+  width: 100%;
+}
+.tabs-container {
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+.thumbnail-container {
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.score-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: cover;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tropy-img {
+  width: 400px;
+  margin-top: 240px;
+}
+.your-score {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.your-score-value {
+  font-family: 'Roboto';
+  font-size: 42px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.play-again-btn {
+  height: 45px;
+  width: 200px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #cf60c8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.paly-again-text {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 12px;
+}
