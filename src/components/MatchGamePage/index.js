@@ -39,11 +39,12 @@ class MatchGamePage extends Component {
 
   timerOnFunction = () => {
     const {elapsedTime} = this.state
-    if (elapsedTime === 1) {
+    if (elapsedTime === 0) {
       this.stopTimer()
       this.setState({isGameWin: true})
+    } else {
+      this.setState(prevState => ({elapsedTime: prevState.elapsedTime - 1}))
     }
-    this.setState(prevState => ({elapsedTime: prevState.elapsedTime - 1}))
   }
 
   startTimer = () => {
@@ -87,7 +88,7 @@ class MatchGamePage extends Component {
           alt="trophy"
           className="tropy-img"
         />
-        <h1 className="your-score">YOUR SCORE</h1>
+        <p className="your-score">YOUR SCORE</p>
         <p className="your-score-value">{score}</p>
         <button
           type="button"
@@ -165,17 +166,23 @@ class MatchGamePage extends Component {
               alt="website logo"
               className="website-logo"
             />
-            <div className="score-container">
-              <p className="score">
-                score: <span className="score-count">{score}</span>
-              </p>
-              <img
-                src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png"
-                alt="timer"
-                className="timer-img"
-              />
-              <p className="timer-count">{elapsedTime} sec</p>
-            </div>
+            <ul className="score-container">
+              <li className="nav-item score">
+                <p className="score">
+                  score: <span className="score-count">{score}</span>
+                </p>
+              </li>
+              <li className="nav-item">
+                <img
+                  src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png"
+                  alt="timer"
+                  className="timer-img"
+                />
+              </li>
+              <li className="nav-item timer-count">
+                <p className="timer-count">{elapsedTime} sec</p>
+              </li>
+            </ul>
           </div>
         </nav>
         <div className="app-container">

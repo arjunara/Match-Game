@@ -15,14 +15,29 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .header-section {
+    width: 95%;
+  }
+}
 .website-logo {
   height: 45px;
   padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .website-logo {
+    height: 38px;
+    padding-left: 5px;
+  }
 }
 .score-container {
   display: flex;
   align-items: center;
   padding-right: 10px;
+  padding-left: 0px;
+}
+.nav-item {
+  list-style-type: none;
 }
 .score {
   font-family: 'Roboto';
@@ -48,6 +63,25 @@
   color: #fec653;
   margin-left: 10px;
 }
+@media screen and (max-width: 768px) {
+  .score-container {
+    padding-right: 5px;
+    margin-left: 15px;
+  }
+  .score {
+    font-size: 18px;
+  }
+  .score-count {
+    font-size: 18px;
+  }
+  .timer-img {
+    height: 25px;
+    width: 25px;
+  }
+  .timer-count {
+    font-size: 22px;
+  }
+}
 .app-container {
   min-height: 85vh;
   display: flex;
@@ -60,9 +94,20 @@
   margin-top: 35px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .home-container {
+    width: 90%;
+  }
+}
 .home-page-image {
   height: 500px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .home-page-image {
+    height: 260px;
+    max-height: 340px;
+  }
 }
 .tabs-container {
   padding-left: 0px;
@@ -86,6 +131,12 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .score-card {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+    width: 80%;
+  }
+}
 .tropy-img {
   width: 400px;
   margin-top: 240px;
@@ -96,6 +147,14 @@
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+  .tropy-img {
+    margin-top: 180px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+  }
 }
 .your-score-value {
   font-family: 'Roboto';
